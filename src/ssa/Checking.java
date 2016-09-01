@@ -18,9 +18,9 @@ public class Checking extends Account {
 		return this.getBalance();
 	}
 	
-	public Checking(){
-		this.setType("C");
-	}
+//	public Checking(){
+//		this.setType("C");
+//	}
 	
 	public Checking(String aDescription){
 		this.setType("C");

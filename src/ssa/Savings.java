@@ -7,7 +7,7 @@ public class Savings extends Account {
 	
 	
 	String print(){
-		return super.print() + getInterestRate();
+		return super.print() + "  " + getInterestRate();
 	}
 	
 	public double getMinimumBalance() {
@@ -41,16 +41,16 @@ public class Savings extends Account {
 	}
 	
 
-public Savings() {
-	this.setType("S");
-		}
+//public Savings() {
+//	this.setType("S");
+//		}
 	
-public Savings(String aDescription){
-	this.setType("S");
-	setDescription(aDescription);
-	}
+//public Savings(String aDescription){
+//	this.setType("S");
+//	setDescription(aDescription);
+//	}
 
-public Savings(int Rate, String aDescription){
+public Savings(double Rate, String aDescription){
 	this.setType("S");
 	setDescription(aDescription);
 	setInterestRate(Rate);

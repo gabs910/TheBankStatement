@@ -5,7 +5,7 @@ import java.util.ArrayList;
 public class Mainline {
 
 	public static void main(String[] args) {
-		Savings firstone = new Savings();
+		Savings firstone = new Savings(.006,"Savings Main");
 		firstone.balance = 500;
 		firstone.setInterestRate(.015);
 		firstone.calcDepositInterest(4);
@@ -13,21 +13,21 @@ public class Mainline {
 	//	firstone.print();
 		
 		
-		Account two = new Savings("Savings2");
+		Account two = new Savings(.05,"Savings2");
 		two.deposit(200);
 	//	two.print();
 		two.printHeader();
 		
-		Account three = new Savings("Savings3");
+		Account three = new Savings(.03,"Savings3");
 		three.deposit(900);
 		three.deposit(800);
 		three.withdraw(200);
 		three.transferFrom(two, 200);
 		
-		Account four = new Savings(10, "Savings4");
+		Account four = new Savings(.002, "Savings4");
 		four.deposit(500);
 		
-		Account five = new Checking();
+		Account five = new Checking("Checking1");
 		five.deposit(600);
 		five.withdraw(200);
 		

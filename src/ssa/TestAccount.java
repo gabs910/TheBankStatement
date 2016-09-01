@@ -57,7 +57,7 @@ public class TestAccount {
 				@Test
 			public void savingsTest(){
 		
-				Savings test2 = new Savings();
+				Savings test2 = new Savings(.06,"Savings9");
 			//set and get MinimumBalance and testing
 				test2.setMimimumBalance(300);
 				assertEquals(300, test2.getMinimumBalance(),0);

@@ -16,7 +16,7 @@ public class Account {
 	}
 	
 	String print(){
-		System.out.printf("%-1s %-4s %-21s %-8s", getType(),getAccountId(),getDescription(),df.format(balance));
+		System.out.printf("%-1s %-4s %-19s %8s", getType(),getAccountId(),getDescription(),df.format(balance));
 		//System.out.println( "Account: " + getAccountId() + " " + "balance is $" + df.format(balance) + '\n');
 		return  " ";//getType()+" "+getAccountId()+" "+getDescription()+"\t"+df.format(balance);
 
